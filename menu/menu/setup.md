@@ -5,9 +5,22 @@
 ```yaml
 # The display title of inventory
 Title: 'Hello, TrMenu'
+
+# The update time of inventory's title (in ticks)
+Title-Update: -1
 ```
 
-Does not support animated title yet
+```yaml
+# The inventory's title
+Title:
+  - 'Hello TrMenu'
+  - 'This are animated titles,'
+  - 'You can also use variables!'
+  - 'Thx for using, %player_name%!'
+
+# The update time of inventory's title (in ticks), Default: -1
+Title-Update: 40
+```
 
 ## Ⅱ. Inventory Type
 
