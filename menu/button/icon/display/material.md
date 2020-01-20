@@ -76,7 +76,17 @@ Useful link
 - 'white banner<banner:RED MOJANG,WHITE>'
 ```
 
-[https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/banner/PatternType.html](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/banner/PatternType.html)
+{% embed url="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/banner/PatternType.html" %}
+
+## JSON Item \(NBT Support\)
+
+```yaml
+- '{"type":"DIAMOND_SWORD","data":0,"amount":1,"meta":{"Damage":{"type":"INT","data":0}}}'
+```
+
+To get the JSON text of a item, you just need to hold the item in the main hand
+
+And type **/TrMenu Item**
 
 ## Head Database
 

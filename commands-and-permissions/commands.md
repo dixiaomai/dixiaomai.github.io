@@ -1,7 +1,4 @@
 # Commands
 
-* /Menu List 
-* /Menu Reload
-* /Menu Open \[Menu\] &lt;ID&gt;
-* /Menu About
+![TrMenu Commansd](../.gitbook/assets/image%20%2815%29.png)
 
