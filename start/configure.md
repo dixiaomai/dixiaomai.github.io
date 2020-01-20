@@ -22,12 +22,18 @@ description: Configure the TrMenu
 CONFIG-VERSION: 0
 
 # Locale loading priority
+# Put your locale in the first
+# Contributing Translations: https://trmenu.trixey.cn/other/locale
 LOCALE-PRIORITY:
   - en_US
   - zh_CN
+  - zh_TW
+  - vi_VN
 
 # Options
 OPTIONS:
+  # Enable this, the plugin will not display the logo when loading
+  SILENT: false
   # Similar material matches
   MATERIAL-SIMILAR-DEGREE: 0.8
   # Anti inventory click spam (millisecs)
@@ -56,6 +62,7 @@ MENUS:
           display:
             mats: apple
             name: '&6Nice to meet you~'
+
 ```
 {% endcode %}
 
