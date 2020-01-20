@@ -78,8 +78,8 @@
 * [Placeholders](api/placeholders.md)
 * [TrUtils](api/trutils.md)
 * [TrMenuAPI](api/trmenuapi.md)
-* [Events](api/shi-jian/README.md)
-  * [MenuOpenEvent](api/shi-jian/menuopenevent.md)
+* [Events](api/event/README.md)
+  * [MenuOpenEvent](api/event/menuopenevent.md)
 
 ## OTHER
 
