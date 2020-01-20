@@ -4,7 +4,7 @@ description: 欢迎来到本页面查询 TrMenu 文档
 
 # 主页
 
-![TrMenu Intro \(CN\)](.gitbook/assets/image.png)
+![TrMenu Intro \(CN\)](.gitbook/assets/image%20%288%29.png)
 
 ## 为什么选择 TrMenu？
 

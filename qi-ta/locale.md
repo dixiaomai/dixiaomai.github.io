@@ -8,7 +8,7 @@
 
 ## 贡献翻译
 
-![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
+![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm%20%281%29.jpg)
 
 
 
