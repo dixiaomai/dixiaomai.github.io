@@ -4,6 +4,7 @@
 * [开始](start/README.md)
   * [安装](start/install.md)
   * [配置](start/configure.md)
+* [迁移](migrate.md)
 
 ## Menu
 
