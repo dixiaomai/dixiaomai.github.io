@@ -77,8 +77,6 @@ Close-Actions:
   - 'sound: BLOCK_CHEST_CLOSE-1-2'
 ```
 
-这些是打开、关闭菜单后都会执行的动作
-
 ## Ⅵ. Menu Options & Binding Open
 
 ```yaml
