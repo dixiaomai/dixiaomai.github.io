@@ -1,38 +1,27 @@
 ---
-description: 下载并安装 TrMenu
+description: Download and install TrMenu
 ---
 
-# 安装
+# Install
 
-## 环境检测
+## Requirements
 
 {% hint style="info" %}
-TrMenu 需要在联网情况下安装
+TrMenu needs to be installed under network connected
 {% endhint %}
 
-| 支持服务端 | 服务端版本 |
+| Supported Server | Version |
 | :--- | :--- |
 | Spigot | 1.8-1.15 |
 | Paper | 1.8-1.15 |
-| CatServer | 1.12.2 |
+| CatServer \(Forge\) | 1.12.2 |
 
-{% hint style="success" %}
-理论支持 1.8+ 的绝大多数 Spigot 以其衍生端
-{% endhint %}
+## Download
 
-## 下载插件
+[https://github.com/Arasple/TrMenu/releases](https://github.com/Arasple/TrMenu/releases)
 
-* 当前 TrMenu 仅在 MCBBS 和 SpigotMC 发布
-* 请勿在任何第三方渠道取得本插件
+## Install
 
-[https://www.mcbbs.net/thread-918078-1-1.html](https://www.mcbbs.net/thread-918078-1-1.html)
-
-## 安装插件
-
-* 下载后将 **TrMenu.jar** 文件拖入到 plugins 目录中
-* 重启服务器完成安装
-
-{% hint style="info" %}
-如果出现报错、不兼容等情况，请反馈
-{% endhint %}
+* Drop the **TrMenu.jar** into plugins folder
+* Restart the server
 

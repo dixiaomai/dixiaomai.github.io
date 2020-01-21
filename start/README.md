@@ -1,6 +1,6 @@
 ---
-description: 快速入门上手使用 TrMenu
+description: Get started
 ---
 
-# 入门
+# Start
 

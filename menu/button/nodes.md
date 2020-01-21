@@ -1,10 +1,6 @@
----
-description: 快速配置你的按钮 & 图标
----
+# Nodes
 
-# 节点
-
-## 示例按钮
+## Example Button
 
 ```yaml
   'A':
@@ -60,54 +56,44 @@ description: 快速配置你的按钮 & 图标
           name: '&2&lWelcome, &a&lAuthor!'
           lore:
             - ''
-            - '&7Hello Arasple,'
-            - '&7Woowwwwwww'
+            - '&7Hello Arasple'
             - ''
 ```
 
-## Ⅰ. 更新周期
-
-按钮包括两个更新周期, 一是显示物品的刷新, 二是优先级图标的重新筛选
+## Ⅰ. Update/Refresh Time
 
 ```yaml
-# 刷新显示物品
+# Update for name, lore, materials and placeholders
 update: 10
-# 刷新优先级图标
+# Re-calculated the priority icon
 refresh: 60
 ```
 
-## Ⅱ. 默认图标
+## Ⅱ. Default Icon
 
 ```yaml
-# 默认显示部分
 display:
   mats: ...
   name: ...
   lore: ...
-
-# 默认动作部分
 actions:
-  # 类型 <-> [动作]
   all:
     - '...'
 ```
 
-## Ⅲ. 条件图标
+## Ⅲ. Priority Icons
 
 ```yaml
 icons:
-  # 该条件图标的表达式
+  # Requirement
   - condition: '"%player_name%" == "Arasple"'
-    priority: 0 
-    # 该优先级图标的显示部分
     display:
       mats: ...
-    # 该优先级图标的动作部分
     actions: ...
 ```
 
 {% hint style="info" %}
-优先级图标的显示部分的属性非必填，默认将继承默认图标的属性
+The properties of the display part of the priority icon are not required, inherits the default icon by default
 {% endhint %}
 
 

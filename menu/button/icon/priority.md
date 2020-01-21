@@ -1,8 +1,10 @@
-# 优先级
+# Priority
 
-条件图标是根据优先级大小来先后判断的
+The priority icons are sorted by their priority
 
-如果你只有一个条件图标，则不必设置此项
+You don't actually need to set this value if you only have one priority icon
+
+
 
 ```yaml
   priority: 5
@@ -12,7 +14,7 @@
   pri: 3
 ```
 
-优先级数值越大，越先被检测条件是否满足
+The larger the value, the earlier its requirement is checked
 
 ## 
 
@@ -26,4 +28,6 @@
   display:
     mats: 'diamond'
 ```
+
+{% page-ref page="../../../actions/functional-actions/javascript.md" %}
 

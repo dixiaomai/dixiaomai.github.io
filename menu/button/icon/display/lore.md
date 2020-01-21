@@ -2,18 +2,18 @@
 description: Lore
 ---
 
-# 物品描述
+# Lore
 
-## **节点匹配**
+## Node
 
 ```javascript
 lore(s)?
 ```
 
-## 示例
+## Examples
 
 ```yaml
-# 动态 Lores, 多组 List
+# Animated lores, multiple lists
 lore:
   - - '1st Lore, Line 1'
     - '1st Lore, Line 2'
@@ -23,7 +23,7 @@ lore:
 ```
 
 ```yaml
-# 静态 Lore
+# Lore
 lore:
   - 'Line 1'
   - 'Line 2'

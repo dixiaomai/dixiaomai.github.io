@@ -2,23 +2,21 @@
 description: Amount
 ---
 
-# 物品数量
+# Amount
 
-## **节点匹配**
+## Node
 
 ```javascript
 amount(s)?
 ```
 
-## 示例
+## Example
 
 ```yaml
-# 动态表达式数量, 需返回整数
 amount: '%server_time_s%+1'
 ```
 
 ```yaml
-# 静态恒定数量
 amount: 5
 ```
 

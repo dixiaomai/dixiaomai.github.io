@@ -1,6 +1,2 @@
----
-description: 每个动作都可以设置独立的动作参数
----
-
-# 动作参数 \*
+# Action Options
 

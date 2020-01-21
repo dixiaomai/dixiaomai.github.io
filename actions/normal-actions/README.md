@@ -1,6 +1,2 @@
----
-description: 这里列出一些比较简单的动作用法
----
-
-# 常规动作
+# Normal Actions
 

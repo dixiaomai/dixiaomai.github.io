@@ -1,33 +1,30 @@
----
-description: 菜单是由按钮构成
----
+# Create Buttons
 
-# 创建按钮
+## Structure
 
-## 结构介绍
+* Button
+  * Update Time \(lore, name, materials, placeholders etc.\)
+  * Refresh Time \(priority icons\)
+  * **Default Icon Display**
+  * **Default Icon Actions**
+  * Priority Icons
+    * pIcon1
+      * pIcon1's **Display Part**
+      * pIcon1's **Actions Part**
 
-* 按钮主体
-  * 更新周期
-  * 优先级更新周期
-  * 默认**显示模块**
-  * 默认**动作模块**
-  * 优先级图标
-    * 图标1
-      * 图标1 的**显示模块**
-      * 图标1 的**动作模块**
-
-## 示例按钮
+## Example Button
 
 ```yaml
-# 定义容器的按钮, 与 Shaple 模板中的字符相对应
-# （可以二次定义动态位置）
-BUTTONS:
-  # 对应 Shape 中的模板排版中的字符
+# Buttons of this menu
+# You can re-define ones' slots
+Buttons:
+  # Character from 'shape'
   '#':
-    # (可选) 更新周期, 不设置则不刷新
+    # (Optional) The period for lore, materials and names to update (in ticks)
     update: 25
-    # (必须) 图标显示
+    # (Required) Default display part
     display:
+      # Materials, or specify item
       mats: GRAY_STAINED_GLASS_PANE
       name:
         - '&3Tr&bMenu'
@@ -37,13 +34,11 @@ BUTTONS:
           - '&7Advanced & Dynamic menus for Minecraft'
         - - '&7Tr&fMenu &7by &2Arasple'
           - '&7Thanks for using :>'
-    # 点击动作
+    # Click Actions
     actions:
-      # 类型 - [动作]
+      # ClickType - [Actions]
       all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
 ```
-
-按钮稍后会详解
 
 {% page-ref page="../button/" %}
 

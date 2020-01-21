@@ -2,18 +2,17 @@
 description: DIsplay Names
 ---
 
-# 显示名称
+# Display Name
 
-## **节点匹配**
+## Node
 
 ```javascript
 name(s)?|displayname(s)?
 ```
 
-## **示例**
+## Examples
 
 ```yaml
-# 动态名称
 name:
   - 'Text1'
   - 'Text2'
@@ -21,7 +20,6 @@ name:
 ```
 
 ```yaml
-# 静态名称
 name: 'Text'
 ```
 
