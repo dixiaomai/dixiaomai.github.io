@@ -4,6 +4,7 @@
 * [Start](start/README.md)
   * [Install](start/install.md)
   * [Configure](start/configure.md)
+* [Migrate](migrate.md)
 
 ## Menu
 
