@@ -82,7 +82,11 @@ skull|custom(-head)?|custom(-skull)?
 - '{"type":"DIAMOND_SWORD","data":0,"amount":1,"meta":{"Damage":{"type":"INT","data":0}}}'
 ```
 
-通过命令 **/TrMenu Item** 转换物品为 JSON 文本   
+如果本页面的其它提供材质方式无法满足你的需求，那么这将是你的最终无敌全能解决方案
+
+什么都至今从
+
+通过命令 /TrMenu Item 将手持物品转成 Json 格式
 
 ## Head Database
 
