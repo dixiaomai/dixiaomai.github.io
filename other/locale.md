@@ -7,6 +7,7 @@
 * \*\*\*\*[**en\_US**](https://github.com/Arasple/TrMenu/blob/master/src/main/resources/lang/en_US.yml) ****\(English\) 
 * \*\*\*\*[**vi\_VN**](https://github.com/Arasple/TrMenu/blob/master/src/main/resources/lang/vi_VN.yml) \(Vietnamese by **Galaxyvietnam**\) 
 * \*\*\*\*[**th\_TH**](https://github.com/Arasple/TrMenu/blob/master/src/main/resources/lang/th_TH.yml) \(Thai by **DriteStudio**\) 
+* \*\*\*\*[**es\_ES**](https://github.com/Arasple/TrMenu/blob/master/src/main/resources/lang/es_ES.yml) ****\(Spanish by **brs73**\)
 
 ## Contributing Translations
 
