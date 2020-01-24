@@ -100,11 +100,3 @@ Require plugin [https://www.spigotmc.org/resources/head-database.14280/](https:/
 - '<head-database:random>'
 ```
 
-## Oraxen
-
-Require plugin [https://www.spigotmc.org/resources/72448/](https://www.spigotmc.org/resources/72448/)
-
-```yaml
-- '<oraxen:ITEM_ID>'
-```
-
