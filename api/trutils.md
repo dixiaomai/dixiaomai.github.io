@@ -8,17 +8,21 @@ description: Offer methods can be used in JavaScript
 ```java
 package me.arasple.mc.trmenu.utils;
 
+import com.google.common.collect.Lists;
 import io.izzel.taboolib.internal.apache.lang3.math.NumberUtils;
 import io.izzel.taboolib.util.Strings;
 import io.izzel.taboolib.util.lite.Numbers;
 import me.arasple.mc.trmenu.action.TrAction;
 import me.arasple.mc.trmenu.data.ArgsCache;
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Arasple
@@ -32,7 +36,7 @@ public class TrUtils {
     public static TrUtils getInst() {
         return instance;
     }
-    
+
     /*
     TRACTION
      */
@@ -44,6 +48,10 @@ public class TrUtils {
             }
             TrAction.runActions(TrAction.readActions(action), player);
         }
+    }
+
+    public String parseBracketPlaceholders(Player player, String string) {
+        return PlaceholderAPI.setBracketPlaceholders(player, string);
     }
 
     /*
@@ -78,7 +86,6 @@ public class TrUtils {
         return new ArrayList<>(Bukkit.getOnlinePlayers()).get(randomInteger(0, Bukkit.getOnlinePlayers().size() - 1));
     }
 
-
     /*
     NUMBER
      */
@@ -93,6 +100,22 @@ public class TrUtils {
 
     public boolean isNumber(String number) {
         return NumberUtils.isParsable(number);
+    }
+
+    public boolean isSmaller(String input1, String input2) {
+        return NumberUtils.toDouble(input1) < NumberUtils.toDouble(input2);
+    }
+
+    public boolean isGreater(String input1, String input2) {
+        return NumberUtils.toDouble(input1) > NumberUtils.toDouble(input2);
+    }
+
+    public boolean isSmallerOrEqual(String input1, String input2) {
+        return NumberUtils.toDouble(input1) <= NumberUtils.toDouble(input2);
+    }
+
+    public boolean isGreaterOrEqual(String input1, String input2) {
+        return NumberUtils.toDouble(input1) >= NumberUtils.toDouble(input2);
     }
 
     public boolean chance(double rate) {
@@ -127,6 +150,48 @@ public class TrUtils {
 
     public Location createLocation(World world, double x, double y, double z, float yaw, float pitch) {
         return new Location(world, x, y, z, yaw, pitch);
+    }
+
+    /*
+    FOR TRMENU PLUGIN
+     */
+
+    private static List<Character> keys = Arrays.asList('#', '-', '+', '|', '=', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+
+    public static List<Character> getKeys() {
+        return keys;
+    }
+
+    public static <T> List<List<T>> readList(Object object, Class<T> classz) {
+        List<List<T>> list = Lists.newArrayList();
+        if (!(object instanceof List) || ((List) object).size() <= 0) {
+            return list;
+        } else if (((List) object).get(0) instanceof List) {
+            ((List) object).forEach(x -> list.add((ArrayList<T>) x));
+        } else {
+            list.add(castList(object, classz));
+        }
+        return list;
+    }
+
+    public static <T> List<T> castList(Object object, Class<T> classz) {
+        List<T> result = new ArrayList<>();
+        if (object instanceof List<?>) {
+            for (Object o : (List<?>) object) {
+                try {
+                    result.add(classz.cast(o));
+                } catch (Throwable e) {
+                    result.add(classz.cast(String.valueOf(o)));
+                }
+            }
+        } else if (object != null) {
+            try {
+                result.add(classz.cast(object));
+            } catch (Throwable e) {
+                result.add(classz.cast(String.valueOf(object)));
+            }
+        }
+        return result;
     }
 
 
