@@ -2,15 +2,15 @@
 description: Materials
 ---
 
-# Material
+# 材质
 
-## **Node**
+## **节点**
 
 ```javascript
 material(s)?|id(s)?|mat(s)?
 ```
 
-## Example
+## 示例
 
 ```yaml
 mats:
@@ -30,7 +30,7 @@ mats:
 mats: 'REDSTONE'
 ```
 
-## Player's Skull
+## 玩家头颅
 
 {% code title="Node" %}
 ```javascript
@@ -44,7 +44,7 @@ head|(player-)?head|(variable-)?head
 - '<head:playerID>'
 ```
 
-## Custom Texture Skull
+## 自定义纹理头颅
 
 {% code title="Node" %}
 ```javascript
@@ -58,11 +58,9 @@ skull|custom(-head)?|custom(-skull)?
 - '<skull:TEXTURE>'
 ```
 
-Useful link
+{% embed url="https://minecraft-heads.com/custom-heads" %}
 
-* [https://minecraft-heads.com/custom-heads](https://minecraft-heads.com/custom-heads)
-
-## Dyed Leather Armor
+## 染色皮革
 
 ```yaml
 - 'leather chestplate<dye:255,255,0>'
@@ -70,7 +68,7 @@ Useful link
 # RGB Color
 ```
 
-## Banner
+## 自定义旗帜
 
 ```yaml
 - 'white banner<banner:RED MOJANG,WHITE>'
@@ -84,13 +82,11 @@ Useful link
 - '{"type":"DIAMOND_SWORD","data":0,"amount":1,"meta":{"Damage":{"type":"INT","data":0}}}'
 ```
 
-To get the JSON text of a item, you just need to hold the item in the main hand
-
-And type **/TrMenu Item**
+通过命令 **/TrMenu Item** 转换物品为 JSON 文本   
 
 ## Head Database
 
-Require plugin [https://www.spigotmc.org/resources/head-database.14280/](https://www.spigotmc.org/resources/head-database.14280/)
+需要插件 [https://www.spigotmc.org/resources/head-database.14280/](https://www.spigotmc.org/resources/head-database.14280/)
 
 ```yaml
 - '<hdb:100>'
@@ -98,5 +94,13 @@ Require plugin [https://www.spigotmc.org/resources/head-database.14280/](https:/
 
 - '<hdb:random>'
 - '<head-database:random>'
+```
+
+## Oraxen
+
+需要插件 [https://www.spigotmc.org/resources/72448/](https://www.spigotmc.org/resources/72448/)
+
+```yaml
+- '<oraxen:物品ID>'
 ```
 
