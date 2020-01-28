@@ -88,4 +88,5 @@
 ## OTHER
 
 * [语言 & 翻译](other/locale.md)
+* [打钱](https://afdian.net/@Arasple)
 
