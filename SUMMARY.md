@@ -49,6 +49,7 @@
   * [脚本](actions/functional-actions/javascript.md)
   * [中断](actions/functional-actions/break.md)
 * [菜单动作](actions/menu-actions/README.md)
+  * [切换菜单页码](actions/menu-actions/set-shape.md)
   * [设置图标槽位](actions/menu-actions/set-icon-slots.md)
   * [设置菜单参数](actions/menu-actions/set-menu-arguments.md)
   * [刷新图标](actions/menu-actions/refresh-icon.md)

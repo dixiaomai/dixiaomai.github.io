@@ -1,44 +1,40 @@
-# Setup Menu
+# 配置菜单
 
-## Ⅰ. Menu Title
+## Ⅰ. 容器标题
 
 ```yaml
-# The display title of inventory
+# 标题（静态）
 Title: 'Hello, TrMenu'
 
-# The update time of inventory's title (in ticks)
+# 标题更新周期（负数则不更新）
 Title-Update: -1
 ```
 
 ```yaml
-# The inventory's title
+# 容器标题（动态）
 Title:
   - 'Hello TrMenu'
   - 'This are animated titles,'
   - 'You can also use variables!'
   - 'Thx for using, %player_name%!'
 
-# The update time of inventory's title (in ticks), Default: -1
+# 更新周期（Ticks）
 Title-Update: 40
 ```
 
-## Ⅱ. Inventory Type
+## Ⅱ. 容器类型
 
 ```yaml
 Type: CHEST
 ```
 
-（If this is set, the **shape** will probably not work and you have to define **slots** for each button）
+{% embed url="https://bukkit.windit.net/javadoc/org/bukkit/event/inventory/InventoryType.html" caption="可用类型" %}
 
-**Available Inventory Type**
-
-[https://bukkit.windit.net/javadoc/org/bukkit/event/inventory/InventoryType.html](https://bukkit.windit.net/javadoc/org/bukkit/event/inventory/InventoryType.html)
-
-## Ⅲ. Shape \(Composing the menu\)
+## Ⅲ. 菜单形状
 
 ```yaml
-# Defines the layout of this menu
-# *(Each character represents a button)
+# 快速排版菜单
+# *(每个符号代表一个按钮)
 Shape:
   - '########C'
   - ' QTRMENU '
@@ -47,17 +43,31 @@ Shape:
   - '#########'
 ```
 
-This defines the size of a chest at the same time
+```yaml
+# 多页菜单（多个形状）
+Shape:
+  - - '########C'
+    - ' QTRMENU '
+    - '   SAP   '
+    - '         '
+    - '########>'
+  - - '#########'
+    - ''
+    - ''
+    - '<########'
+```
 
-## Ⅳ. Open/Close Requirement & Deny Actions
+如果是箱子菜单，定义此项的同时也定义了菜单的大小
+
+## Ⅳ. 开关条件动作
 
 ```yaml
-# (Optional)
-Open-Requirement: 'player.hasPermission("trmenu.use")'
+# (Optional) 解读: 玩家拥有权限 trmenu.use 或打开方式是由 后台命令
+Open-Requirement: 'player.hasPermission("trmenu.use") || "$openBy" == "CONSOLE"'
 
 # (Optional)
 Open-Deny-Actions:
-  - 'tell: &7You need permission &ctrmenu.use &7to open this menu.'
+  - 'tell: &7你需要权限 &ctrmenu.use &7打开此菜单.'
 
 # (Optional)
 Close-Requirement: null
@@ -66,10 +76,10 @@ Close-Requirement: null
 Close-Deny-Actions: []
 ```
 
-## Ⅴ. Open/Close Actions
+## Ⅴ. 开关动作
 
 ```yaml
-# (Optional) These run when a player successfully opened the menu
+# (Optional) 当成功打开菜单时执行的动作
 Open-Actions:
   - 'sound: BLOCK_CHEST_OPEN-1-2'
 # (Optional)
@@ -79,32 +89,33 @@ Close-Actions:
 
 这些是打开、关闭菜单后都会执行的动作
 
-## Ⅵ. Menu Options & Binding Open
+## Ⅵ. 菜单选项 & 绑定开启
 
 ```yaml
-# Defines the commands used to open this menu
+# 绑定的开启命令
 Open-Commands:
   - 'example'
   - 'menu'
 
-# Menu Options (All are optional)
+# 菜单选项（全都是可选的，无需配置）
 Options:
-  # Automatically download PlaceholderAPI's expansions
+  # 本菜单强制需要以下 PlaceholderAPI 拓展，若无将自动下载
   Depend-Expansions:
     - 'server'
     - 'player'
     - 'progress'
     - 'math'
-  # (Default: true)
+  # 锁定玩家背包 (Default: true)
   Lock-Player-Inv: true
-  # Use the arguments of an open command as variables (Var: {N*}) (Default: false)
+  # 传参作为变量，第一个参数为 {0}, 第 N 个为 {N-1}
   Transfer-Args: false
-  # Each time when an icon updates, plugin refreshes the player's inventory
-  # [!] Do not recommend. You should only enabled this when you require fast animations in lower Minecraft version
+  # 每次刷新图标时都更新玩家背包
+  # [!] 不推荐开启. 除非你是低版本 Minecraft 服务器，且需要流畅的动画效果
   Update-Inventory: false
-  # Force the arguments it needs (Default: 0)
+  # 强制需要的参数
   Force-Transfer-Args: 0
-  # Bind this menu with items have specific lore
+  # 绑定物品到指定的 Lore
+  # 如下配置，则若某物品的 Lore 组中包括 OPEN_MENU, 玩家左右键交互将打开本菜单
   Bind-Item-Lore:
     - 'OPEN_MENU'
 ```
