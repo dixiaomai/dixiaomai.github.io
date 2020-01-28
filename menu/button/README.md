@@ -1,21 +1,21 @@
-# 按钮
+# Button
 
-## 结构
+## Button Structure
 
-* 按钮
-  * 更新周期 \(lore, name, materials, placeholders etc.\)
-  * 刷新周期 \(条件图标\)
-  * **默认图标 显示部分**
-  * **默认图标 动作部分**
-  * 条件图标
-    * 条件图标 1
-      * 条件图标1的 **显示部分**
-      * 条件图标1的 **动作部分**
+* Button
+  * Update Time \(lore, name, materials, placeholders etc.\)
+  * Refresh Time \(priority icons\)
+  * **Default Icon Display**
+  * **Default Icon Actions**
+  * Priority Icons
+    * pIcon1
+      * pIcon1's **Display Part**
+      * pIcon1's **Actions Part**
 
-## 图标结构
+## Icon Structure
 
 * Icon
-  * **显示部分**
+  * **Display**
     * Name
     * Lore
     * Materials
@@ -23,10 +23,10 @@
     * Shiny
     * Amount
     * etc...
-  * **动作部分**
-    * 点击类型 : 点击动作组
+  * **Actions**
+    * ClickType : ClickaActions
 
-**交互类型**
+**ClickTypes**
 
 * LEFT
 * RIGHT

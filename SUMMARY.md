@@ -88,5 +88,6 @@
 ## OTHER
 
 * [语言 & 翻译](other/locale.md)
-* [打钱](https://afdian.net/@Arasple)
+* [捐款](other/juan-kuan.md)
+* [Afdian](https://afdian.net/@Arasple)
 

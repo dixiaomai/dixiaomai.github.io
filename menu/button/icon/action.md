@@ -1,8 +1,4 @@
-# 动作
-
-{% hint style="info" %}
-动作只有写在 **actions.&lt;交互类型&gt;** 下才有效
-{% endhint %}
+# Actions
 
 ```yaml
 actions:
@@ -12,7 +8,7 @@ actions:
     - 'ACTION2'
 ```
 
-## 点击类型
+## Click Type
 
 * **LEFT**
 * **RIGHT**
@@ -24,7 +20,7 @@ actions:
 * **CONTROL\_DROP**
 * **ALL**
 
-## 了解更多
+## Lean more about Actions
 
 {% page-ref page="../../../actions/normal-actions/" %}
 
