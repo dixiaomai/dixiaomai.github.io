@@ -49,6 +49,7 @@
   * [JavaScript](actions/functional-actions/javascript.md)
   * [Break](actions/functional-actions/break.md)
 * [Menu Actions](actions/menu-actions/README.md)
+  * [Set Shape](actions/menu-actions/set-shape.md)
   * [Set Icon Slots](actions/menu-actions/set-icon-slots.md)
   * [Set Menu Arguments](actions/menu-actions/set-menu-arguments.md)
   * [Refresh Icon](actions/menu-actions/refresh-icon.md)
