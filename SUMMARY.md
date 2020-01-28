@@ -74,6 +74,8 @@
 
 * [随机传送](example-guis/random-teleport.md)
 * [简易商店](example-guis/shop.md)
+* [每日礼包](example-guis/dailyreward.md)
+* [高级商店](example-guis/shopguis.md)
 
 ## API
 
