@@ -23,7 +23,7 @@ mats:
   # Custom texture skull
   - '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU1MzE0MWFhYmU4OWE4YTU4MDRhMTcyMTMzYjQzZDVkMGVlMDU0OWNjMTlkYjAzODU2ODQwNDNjZmE5NDZhNSJ9fX0>'
   # Custom model data item (1.14+)
-  - 'coal<model-data:COAL:1>'
+  - 'coal<model-data:1>'
 ```
 
 ```yaml
