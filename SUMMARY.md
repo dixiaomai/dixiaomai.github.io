@@ -51,6 +51,7 @@
 * [菜单动作](actions/menu-actions/README.md)
   * [切换菜单页码](actions/menu-actions/set-shape.md)
   * [设置图标槽位](actions/menu-actions/set-icon-slots.md)
+  * [更新容器标题](actions/menu-actions/geng-xin-rong-qi-biao-ti.md)
   * [设置菜单参数](actions/menu-actions/set-menu-arguments.md)
   * [刷新图标](actions/menu-actions/refresh-icon.md)
   * [清除空槽位](actions/menu-actions/clear-empty-slots.md)
