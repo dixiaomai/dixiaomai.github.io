@@ -51,6 +51,7 @@
 * [Menu Actions](actions/menu-actions/README.md)
   * [Set Shape](actions/menu-actions/set-shape.md)
   * [Set Icon Slots](actions/menu-actions/set-icon-slots.md)
+  * [Set Title](actions/menu-actions/set-title.md)
   * [Set Menu Arguments](actions/menu-actions/set-menu-arguments.md)
   * [Refresh Icon](actions/menu-actions/refresh-icon.md)
   * [Clear Empty Slots](actions/menu-actions/clear-empty-slots.md)
