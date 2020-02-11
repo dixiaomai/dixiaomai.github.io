@@ -75,6 +75,14 @@ description: 整理一些常见问题，持续更新
 
 * 你的菜单动作格式错了，注意节点、缩进
 
+## 怎么跨服
+
+![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
+
+## 怎么发公告消息
+
+![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
+
 ## 能不能导入 BossShop \(Pro\)
 
 * 目前不能，未来暂无相关计划
