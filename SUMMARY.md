@@ -88,6 +88,7 @@
 
 ## OTHER
 
+* [常见问题](other/qa.md)
 * [语言 & 翻译](other/locale.md)
 * [捐款](other/juan-kuan.md)
 * [Afdian](https://afdian.net/@Arasple)

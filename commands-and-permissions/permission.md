@@ -1,5 +1,6 @@
-# 权限
+# Permission
 
-* trmenu.admin
-* trmenu.command.xxx
+## Only one
+
+trmenu.admin
 
