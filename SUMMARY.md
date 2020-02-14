@@ -89,6 +89,7 @@
 ## OTHER
 
 * [常见问题](other/qa.md)
+* [技巧提示](other/tips.md)
 * [语言 & 翻译](other/locale.md)
 * [捐款](other/juan-kuan.md)
 

@@ -2,11 +2,11 @@
 
 > **%TrMenu\_Menus%**
 
-* Returns the number of menus created by TrMenu your server has
+* 返回你服务器的菜单数
 
 > **%TrMenu\_Version%**
 
-* Returns the version of TrMenu plugin
+* 返回 TrMenu 插件的版本
 
 > **%TrMenu\_TaPapi\_{ID}\|{V}%**
 
@@ -16,6 +16,12 @@
 > **%TrMenu\_Query\_{URL}\|&lt;QUERY&gt;%**
 
 * Examples: [https://github.com/Arasple/TrMenu/blob/master/trmenu.yml](https://github.com/Arasple/TrMenu/blob/master/trmenu.yml)
+
+## 其它变量
+
+{Shape} 返回当前布局的位置, &gt;=0
+
+{Page} 返回当前页码数值, = {Shape} + 1 &gt; 0
 
 
 
