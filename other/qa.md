@@ -19,6 +19,10 @@ description: 整理一些常见问题，持续更新
 
 {% page-ref page="../menu/menu/setup.md" %}
 
+## 为什么是洋文，怎么切换到中文
+
+{% embed url="https://trmenu.trixey.cn/v/chinese/start/configure\#pei-zhi" caption="读你妈的 Wiki 去" %}
+
 ## 我怎么启用菜单参数功能啊？
 
 * 怎么启用，你娘的认真读完 Wiki 了吗？
