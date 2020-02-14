@@ -35,6 +35,10 @@ description: 整理一些常见问题，持续更新
 
 {% embed url="http://www.bejson.com/validators/yaml/" %}
 
+## 这个插件太难了，我放弃了
+
+![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
+
 ## Shape 可真垃圾，我不想用
 
 * 不用就不用，你单独设置 Rows / Size 就行了
