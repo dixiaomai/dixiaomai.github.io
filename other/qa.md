@@ -19,10 +19,6 @@ description: 整理一些常见问题，持续更新
 
 {% page-ref page="../menu/menu/setup.md" %}
 
-## 为什么是洋文，怎么切换到中文
-
-{% embed url="https://trmenu.trixey.cn/v/chinese/start/configure\#pei-zhi" caption="读你妈的 Wiki 去" %}
-
 ## 我怎么启用菜单参数功能啊？
 
 * 怎么启用，你娘的认真读完 Wiki 了吗？
@@ -35,18 +31,9 @@ description: 整理一些常见问题，持续更新
 
 {% embed url="http://www.bejson.com/validators/yaml/" %}
 
-## 这个插件太难了，我放弃了
-
-![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
-
 ## Shape 可真垃圾，我不想用
 
 * 不用就不用，你单独设置 Rows / Size 就行了
-
-## 为什么这司马 wiki 这么慢？
-
-* 爪巴 梯子
-* 下载离线版
 
 ## 我的布局 Shape 字符不够用怎么办？
 
@@ -88,10 +75,6 @@ description: 整理一些常见问题，持续更新
 
 * 你的菜单动作格式错了，注意节点、缩进
 
-## 这垃圾玩意真的难弄，还有人用？
-
-{% embed url="https://bstats.org/plugin/bukkit/TrMenu" %}
-
 ## 怎么跨服
 
 ![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
@@ -115,10 +98,6 @@ description: 整理一些常见问题，持续更新
 
 * 如果你实在实在看不懂的话，就自己摸索吧
 * 我也没办法
-
-## 每日礼包一定要用 LuckPerms 吗
-
-* 任何支持限时权限的插件都行
 
 ## 能做点卷商店吗？
 
