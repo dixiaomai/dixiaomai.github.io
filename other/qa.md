@@ -90,7 +90,7 @@ description: 整理一些常见问题，持续更新
 
 ## 这垃圾玩意真的难弄，还有人用？
 
-* /trmenu about
+{% embed url="https://bstats.org/plugin/bukkit/TrMenu" %}
 
 ## 怎么跨服
 
