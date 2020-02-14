@@ -88,6 +88,10 @@ description: 整理一些常见问题，持续更新
 
 * 你的菜单动作格式错了，注意节点、缩进
 
+## 这垃圾玩意真的难弄，还有人用？
+
+* /trmenu about
+
 ## 怎么跨服
 
 ![n&#xED;n p&#xE8;i ma](../.gitbook/assets/npm.jpg)
