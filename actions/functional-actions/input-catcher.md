@@ -1,15 +1,15 @@
 ---
-description: It's a functional action that reacts to the player's input
+description: 对玩家输入的内容反应
 ---
 
-# Input Catcher
+# 输入捕获
 
-## Aliases
+## 节点
 
 * CATCH
 * CATCHER
 
-## Example
+## 示例
 
 ```yaml
 - |-
@@ -19,34 +19,71 @@ description: It's a functional action that reacts to the player's input
    <Valid=TELL:&6You typed a number &a$input>
    <Invalid=TELL:&cInvalid number input>
    <Require=TrUtils.isNumber("$input")>
-   <Cancel=TELL:&7Canceld...>
+   <Cancel=TELL:&7Canceld...>的
 ```
 
 {% tabs %}
 {% tab title="TYPE" %}
-The way of the plugin to gather player's input text
+**CHAT**: 关闭玩家容器，拦截玩家下一次输入的聊天内容
 
-**CHAT**: Plugin close player's inventory, and reacts to the next chat message
-
-**SIGN:** Open a new sign and reacts to the lines when the player finishes editing
+**SIGN:** 给玩家发送一个虚拟木牌，等待编辑完成，读其中的内容
 {% endtab %}
 
 {% tab title="BEFORE" %}
-The action that runs when this catcher action is called
+当 Catcher 动作执行时首先执行的动作
 {% endtab %}
 
 {% tab title="VALID" %}
-The action that runs when there's a input value and requirement\(if there is a requirement\) returns true
+当有一个输入值并且输入值满足 Require （如果有）条件时
 {% endtab %}
 
 {% tab title="INVALID" %}
-The action that runs when there's a input value and requirement returns false
+当有一个输入值并且输入值不满足 Require （如果有）条件时
 {% endtab %}
 
 {% tab title="CANCEL" %}
-When the catcher is canceld
+当输入捕获被取消时
+{% endtab %}
+
+{% tab title="REQUIRE" %}
+可选，此项应是一个 JavaScript 表达式且返回布尔值类型
+
+如果返回 false，即不满足，将会执行 Invalid 的动作并重新请求输入值
+
+如果返回 true，即满足，将会执行 Valid 中的动作
+
+**\[!\] 由于 &gt;, &lt; 等判断符号与该动作冲突，比较数值大小请调用 TrUtils 中的方法**
 {% endtab %}
 {% endtabs %}
 
+上面不是所有的属性都是必须的，根据需要来
 
+Catcher 是一个动作，利用 \|- 分行只是为了方便看，你也可以写一行
+
+## 实例
+
+TPA 请求
+
+```yaml
+      actions:
+        all:
+         - |-
+            Catcher:
+            <Type=SIGN>
+            <Before=Tell:&3&l输入一个玩家的名称>
+            <Valid=TELL:&3操作成功...;JS:player.chat("/tpa " + "$input")>
+            <Invalid=TELL:&c玩家不在线>
+            <Require=TrUtils.isPlayerOnline("$input")>
+            <Cancel=TELL:&7取消操作>
+```
+
+## 太 难 了
+
+可能多行写法不是很易懂，这个功能实质还是一个 **动作** , 同跨服、发消息等动作一个道理
+
+单行写大概是这样的（别直接拿着用，中文只是注解说明）
+
+```yaml
+- 'catcher: <type=SIGN><before=执行该捕获器前执行的动作><valid=输入值有效执行的动作><invalid=无效执行的动作><require=输入值满足什么表达式算有效><cancel=玩家取消捕获器后执行的动作>'
+```
 
